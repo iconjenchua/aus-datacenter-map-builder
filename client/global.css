@@ -1,5 +1,5 @@
 /** @import must precede all other statements */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -43,20 +43,22 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom design colors from Figma */
+    --brand-blue: 207 98% 58%;
+    --dark-text: 232 23% 23%;
+    --enclave-purple: 262 98% 57%;
+    --band-orange: 14 99% 58%;
+    --band-green: 143 67% 51%;
+    --band-yellow: 40 99% 58%;
+    --facility-magenta: 292 98% 58%;
   }
 
   .dark {
@@ -105,5 +107,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
   }
 }
