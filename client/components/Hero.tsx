@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 py-8 md:py-12">
-      <div className="flex flex-col items-center gap-6 md:gap-8">
+      <div className="flex flex-col items-center gap-6 md:gap-8" style={{ background: 'url("hero-background.png") no-repeat center bottom' }}>
         <div className="flex flex-col items-center gap-4 max-w-[733px] text-center">
           <h1 className="text-dark-text font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] lg:leading-[64px] tracking-[-0.07em]">
             Australia Data Centre Index
