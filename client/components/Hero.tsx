@@ -1,7 +1,14 @@
 export default function Hero() {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 py-8 md:py-12">
-      <div className="flex flex-col items-center gap-6 md:gap-8" style={{ background: 'url("hero-background.png") no-repeat center bottom' }}>
+      <div className="flex flex-col items-center gap-6 md:gap-8">
+        <div className="absolute inset-0 w-full h-[600px] pointer-events-none">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F77b39848a80d43cbac69bb0b4927f5c1%2F95f8567e292042fd9eb80c30a4ef4d27?format=webp&width=1600"
+            alt="Australia map network visualization"
+            className="w-full h-full object-contain object-center opacity-60"
+          />
+        </div>
         <div className="flex flex-col items-center gap-4 max-w-[733px] text-center">
           <h1 className="text-dark-text font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] lg:leading-[64px] tracking-[-0.07em]">
             Australia Data Centre Index

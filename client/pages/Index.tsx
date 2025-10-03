@@ -1,6 +1,7 @@
 import DataTable from "@/components/DataTable";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import AdBanner from "@/components/AdBanner";
 
 export default function Index() {
   return (
@@ -8,6 +9,7 @@ export default function Index() {
       <Header />
       <Hero />
       <DataTable />
+      <AdBanner />
     </div>
   );
 }
