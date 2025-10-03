@@ -2,6 +2,7 @@ import DataTable from "@/components/DataTable";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AdBanner from "@/components/AdBanner";
+import ColocationCarousel from "@/components/ColocationCarousel";
 
 export default function Index() {
   return (
@@ -10,6 +11,7 @@ export default function Index() {
       <Hero />
       <DataTable />
       <AdBanner />
+      <ColocationCarousel />
     </div>
   );
 }
