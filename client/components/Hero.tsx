@@ -30,7 +30,6 @@ export default function Hero() {
         </div>
 
         <div className="relative w-full max-w-[1055px] h-[400px] sm:h-[500px] md:h-[575px] mt-4">
-
           <div className="absolute left-1/2 -translate-x-1/2 sm:translate-x-0 md:translate-x-0 lg:translate-x-0 sm:left-[10%] md:left-[15%] md:bottom-[40%]">
             <StatCard
               icon={<TotalSitesIcon />}

@@ -6,13 +6,14 @@ export default function AdBanner() {
           <div className="flex flex-col items-start gap-8 max-w-[634px]">
             <div className="flex flex-col items-start gap-6">
               <h2 className="text-dark-text font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] lg:leading-[64px] tracking-[-0.07em]">
-                Save <span className="bg-[#FAFE1E] px-2">50%</span> on colocation
+                Save <span className="bg-[#FAFE1E] px-2">50%</span> on
+                colocation
               </h2>
               <p className="text-dark-text/[0.68] text-sm leading-5">
                 100Gbps connectivity, half off.
               </p>
             </div>
-            
+
             <button className="flex items-center justify-center gap-2 px-12 py-5 rounded-[20px] bg-brand-blue hover:bg-brand-blue/90 transition-colors">
               <span className="text-white text-center text-sm font-medium leading-5 tracking-[-0.01em]">
                 Get connected
