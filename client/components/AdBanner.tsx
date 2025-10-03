@@ -2,7 +2,7 @@ export default function AdBanner() {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 py-8">
       <div className="relative w-full h-auto min-h-[280px] rounded-3xl bg-white shadow-[0_1px_1px_0_rgba(9,13,20,0.06),-4px_-4px_8px_0_rgba(255,255,255,0.40),8px_8px_24px_0_rgba(9,13,20,0.06)] backdrop-blur-[54px] overflow-hidden">
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 p-10 md:p-12" style={{ background: 'url("flexential-logo.png") right no-repeat contain' }}>
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 p-10 md:p-12" style={{ background: 'url("flexential-logo.png") right no-repeat' }}>
           <div className="flex flex-col items-start gap-8">
             <div className="flex flex-col items-start gap-6">
               <h2 className="text-dark-text font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] lg:leading-[64px] tracking-[-0.07em]">
