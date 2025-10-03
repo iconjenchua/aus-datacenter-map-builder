@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 py-8 md:py-12">
-      <div className="flex flex-col items-center gap-6 md:gap-8">
+      <div className="flex flex-col items-center gap-6 md:gap-8" style={{ background: 'url("hero-background.png") no-repeat center bottom' }}>
         <div className="flex flex-col items-center gap-4 max-w-[733px] text-center">
           <h1 className="text-dark-text font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] lg:leading-[64px] tracking-[-0.07em]">
             Australia Data Centre Index
@@ -23,83 +23,8 @@ export default function Hero() {
         </div>
 
         <div className="relative w-full max-w-[1055px] h-[400px] sm:h-[500px] md:h-[575px] mt-4">
-          <div className="absolute inset-0 overflow-hidden rounded-3xl">
-            <div
-              className="absolute w-[200%] h-[200%] -left-[40%] -top-[40%] opacity-30"
-              style={{
-                background:
-                  "linear-gradient(166deg, rgba(30, 129, 254, 0.50) 30.54%, rgba(30, 129, 254, 0.00) 75.09%)",
-              }}
-            />
 
-            <svg
-              className="absolute left-[8%] bottom-[10%] w-[85%] h-[32%] opacity-65"
-              viewBox="0 0 1056 715"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ filter: "blur(262.63px)" }}
-            >
-              <g opacity="0.65">
-                <ellipse
-                  cx="565.891"
-                  cy="617.731"
-                  rx="480.3"
-                  ry="92.245"
-                  fill="url(#paint0_linear_blur1)"
-                />
-              </g>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_blur1"
-                  x1="565.891"
-                  y1="525.486"
-                  x2="565.891"
-                  y2="709.976"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#1E81FE" />
-                  <stop offset="0.207448" stopColor="#1E81FE" />
-                  <stop offset="1" stopColor="#1E81FE" />
-                </linearGradient>
-              </defs>
-            </svg>
-
-            <svg
-              className="absolute left-[8%] bottom-[12%] w-[85%] h-[20%] opacity-65"
-              viewBox="0 0 1056 297"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ filter: "blur(50px)" }}
-            >
-              <g opacity="0.65">
-                <ellipse
-                  cx="565.996"
-                  cy="158.527"
-                  rx="480.125"
-                  ry="57.569"
-                  fill="url(#paint0_linear_blur2)"
-                />
-              </g>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_blur2"
-                  x1="565.996"
-                  y1="100.958"
-                  x2="565.996"
-                  y2="216.096"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#1E81FE" />
-                  <stop offset="0.5" stopColor="#1E81FE" />
-                  <stop offset="1" stopColor="#1E81FE" />
-                </linearGradient>
-              </defs>
-            </svg>
-
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZG90cyIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj48Y2lyY2xlIGN4PSIyIiBjeT0iMiIgcj0iMiIgZmlsbD0icmdiYSgzMCwxMjksMjU0LDAuMykiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBmaWxsPSJ1cmwoI2RvdHMpIi8+PC9zdmc+')] opacity-40" />
-          </div>
-
-          <div className="absolute left-[5%] sm:left-[10%] md:left-[15%] top-[15%] md:top-[20%]">
+          <div className="absolute left-1/2 -translate-x-1/2 sm:translate-x-0 md:translate-x-0 lg:translate-x-0 sm:left-[10%] md:left-[15%] md:bottom-[40%]">
             <StatCard
               icon={<TotalSitesIcon />}
               number="56"
@@ -107,7 +32,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute right-[5%] sm:right-[10%] md:right-[15%] top-[8%] md:top-[12%]">
+          <div className="absolute left-1/2 sm:left-[unset] -translate-x-1/2 bottom-[47%] sm:translate-x-0 md:translate-x-0 lg:translate-x-0 sm:right-[10%] md:right-[15%] md:bottom-[40%]">
             <StatCard
               icon={<FacilitiesIcon />}
               number="21"
