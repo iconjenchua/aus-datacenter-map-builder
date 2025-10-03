@@ -1,85 +1,47 @@
 export default function AdBanner() {
   return (
-    <div className="w-full max-w-[1200px] mx-auto px-4 py-8">
-      <div className="relative w-full h-auto min-h-[280px] rounded-3xl bg-white shadow-[0_1px_1px_0_rgba(9,13,20,0.06),-4px_-4px_8px_0_rgba(255,255,255,0.40),8px_8px_24px_0_rgba(9,13,20,0.06)] backdrop-blur-[54px] overflow-hidden">
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 p-10 md:p-12" style={{ background: 'url("flexential-logo.png") right no-repeat' }}>
-          <div className="flex flex-col items-start gap-8">
-            <div className="flex flex-col items-start gap-6">
-              <h2 className="text-dark-text font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] lg:leading-[64px] tracking-[-0.07em]">
-                Save <span className="bg-[#FAFE1E] px-2">50%</span> on
-                colocation
-              </h2>
-              <p className="text-dark-text/[0.68] text-sm leading-5">
-                100Gbps connectivity, half off.
-              </p>
-            </div>
-
-            <button className="flex items-center justify-center gap-2 px-12 py-5 rounded-[20px] bg-brand-blue hover:bg-brand-blue/90 transition-colors">
-              <span className="text-white text-center text-sm font-medium leading-5 tracking-[-0.01em]">
-                Get connected
-              </span>
-            </button>
+    <div className="w-full max-w-[1200px] mx-auto px-4 py-6 sm:py-8">
+      <div className="relative w-full rounded-2xl sm:rounded-3xl bg-white shadow-[0_1px_1px_0_rgba(9,13,20,0.06),-4px_-4px_8px_0_rgba(255,255,255,0.40),8px_8px_24px_0_rgba(9,13,20,0.06)] backdrop-blur-[54px] overflow-hidden">
+        {/* Main Content */}
+        <div className="relative z-10 flex flex-col items-start justify-center gap-6 sm:gap-8 p-6 sm:p-8 md:p-10 lg:p-12 min-h-[240px] sm:min-h-[280px]">
+          <div className="flex flex-col items-start gap-4 sm:gap-6 max-w-full">
+            {/* Headline */}
+            <h2 className="text-dark-text font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[60px] leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-[64px] tracking-[-0.07em]">
+              Save{" "}
+              <span className="bg-[#FAFE1E] px-1 sm:px-2 rounded-sm">50%</span>{" "}
+              on colocation
+            </h2>
+            
+            {/* Subtitle */}
+            <p className="text-dark-text/[0.68] text-sm sm:text-base leading-5 sm:leading-6 max-w-full">
+              100Gbps connectivity, half off.
+            </p>
           </div>
+
+          {/* CTA Button */}
+          <button className="flex items-center justify-center gap-2 px-8 sm:px-10 lg:px-12 py-3 sm:py-4 lg:py-5 rounded-2xl sm:rounded-[20px] bg-brand-blue hover:bg-brand-blue/90 transition-colors self-start">
+            <span className="text-white text-center text-sm sm:text-base font-medium leading-5 tracking-[-0.01em] whitespace-nowrap">
+              Get connected
+            </span>
+          </button>
         </div>
 
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[536px] h-[663px] -rotate-90 opacity-20 pointer-events-none overflow-hidden">
-          <svg
-            className="w-full h-full"
-            viewBox="0 0 623 280"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M429.5 58.5L469.5 58.5V98.5H429.5V58.5Z"
-              fill="url(#paint0_linear)"
-              fillOpacity="0.02"
-            />
-            <path
-              d="M507.5 137.5H547.5V177.5H507.5V137.5Z"
-              fill="url(#paint1_linear)"
-              fillOpacity="0.02"
-            />
-            <path
-              d="M625 -174H664V-135M625 -174V-135M625 -174L586 -174M625 -135H664M625 -135L586 -135M625 -135V-96M664 -135V-96M586 -174V-135M586 -174H547M586 -135H547M586 -135V-96M547 -174V-135M547 -174H508M547 -135H508M547 -135V-96M508 -174V-135M508 -174L469 -174M508 -135L469 -135M508 -135V-96M469 -174V-135M469 -174H430M469 -135H430M469 -135V-96M430 -174V-135M430 -174H391M430 -135H391M430 -135V-96M391 -174V-135M391 -174L352 -174M391 -135L352 -135M391 -135V-96M352 -174V-135M352 -174H313M352 -135H313M352 -135V-96M313 -174V-135M313 -174H274M313 -135H274M313 -135V-96M274 -174V-135M274 -174L235 -174M274 -135L235 -135M274 -135V-96M235 -174V-135M235 -174H196M235 -135H196M235 -135V-96M196 -174V-135M196 -174H157M196 -135H157M196 -135V-96M157 -174V-135M157 -174L118 -174M157 -135L118 -135M157 -135V-96M118 -174V-135M118 -174H79M118 -135H79M118 -135V-96M79 -174V-135M79 -174H40M79 -135L40 -135M79 -135V-96M40 -174V-135M40 -174L1 -174V-135M40 -135H1M40 -135V-96M1 -135V-96M625 -96L664 -96M625 -96H586M625 -96V-57M664 -96V-57M586 -96L547 -96M586 -96V-57M547 -96L508 -96M547 -96V-57M508 -96H469M508 -96V-57M469 -96L430 -96M469 -96V-57M430 -96L391 -96M430 -96V-57M391 -96H352M391 -96L391 -57M352 -96L313 -96M352 -96L352 -57M313 -96L274 -96M313 -96L313 -57M274 -96H235M274 -96L274 -57M235 -96L196 -96M235 -96L235 -57M196 -96L157 -96M196 -96L196 -57M157 -96H118M157 -96L157 -57M118 -96L79 -96M118 -96V-57M79 -96L40 -96M79 -96V-57M40 -96H1M40 -96V-57M1 -96V-57M625 -57L664 -57M625 -57H586M625 -57V-18M664 -57V-18M586 -57L547 -57M586 -57V-18M547 -57L508 -57M547 -57V-18M508 -57H469M508 -57V-18M469 -57L430 -57M469 -57V-18M430 -57L391 -57M430 -57V-18M391 -57H352M391 -57V-18M352 -57L313 -57M352 -57V-18M313 -57L274 -57M313 -57V-18M274 -57H235M274 -57V-18M235 -57L196 -57M235 -57V-18M196 -57L157 -57M196 -57V-18M157 -57H118M157 -57V-18M118 -57L79 -57M118 -57V-18M79 -57L40 -57M79 -57V-18M40 -57H1M40 -57V-18M1 -57V-18M625 -18H664M625 -18L586 -18M625 -18V21M664 -18V21M586 -18H547M586 -18V21M547 -18H508M547 -18V21M508 -18L469 -18M508 -18L508 21M469 -18H430M469 -18L469 21M430 -18H391M430 -18L430 21M391 -18L352 -18M391 -18V21M352 -18H313M352 -18V21M313 -18H274M313 -18V21M274 -18L235 -18M274 -18V21M235 -18H196M235 -18V21M196 -18H157M196 -18V21M157 -18L118 -18M157 -18V21M118 -18H79M118 -18V21M79 -18H40M79 -18V21M40 -18L1 -18M40 -18V21M1 -18V21M625 21H664M625 21L586 21M625 21V60M664 21L664 60M586 21H547M586 21V60M547 21H508M547 21V60M508 21L469 21M508 21V60M469 21H430M469 21V60M430 21H391M430 21V60M391 21L352 21M391 21V60M352 21H313M352 21V60M313 21H274M313 21V60M274 21L235 21M274 21V60M235 21H196M235 21V60M196 21H157M196 21V60M157 21L118 21M157 21V60M118 21H79M118 21L118 60M79 21H40M79 21L79 60M40 21L1 21M40 21L40 60M1 21L1 60M625 60H664M625 60L586 60M625 60L625 99M664 60V99M586 60H547M586 60L586 99M547 60H508M547 60L547 99M508 60L469 60M508 60V99M469 60H430M469 60V99M430 60H391M430 60V99M391 60L352 60M391 60V99M352 60H313M352 60V99M313 60H274M313 60V99M274 60L235 60M274 60V99M235 60H196M235 60V99M196 60H157M196 60V99M157 60L118 60M157 60V99M118 60H79M118 60V99M79 60H40M79 60V99M40 60L1 60M40 60V99M1 60V99M625 99H664M625 99H586M625 99V138M664 99V138M586 99L547 99M586 99V138M547 99H508M547 99V138M508 99H469M508 99L508 138M469 99H430M469 99L469 138M430 99H391M430 99L430 138M391 99H352M391 99V138M352 99L313 99M352 99V138M313 99H274M313 99V138M274 99H235M274 99V138M235 99H196M235 99V138M196 99H157M196 99V138M157 99H118M157 99V138M118 99L79 99M118 99V138M79 99H40M79 99V138M40 99H1M40 99V138M1 99V138M625 138H664M625 138H586M625 138V177M664 138V177M586 138L547 138M586 138V177M547 138H508M547 138V177M508 138H469M508 138V177M469 138H430M469 138V177M430 138H391M430 138V177M391 138H352M391 138L391 177M352 138L313 138M352 138L352 177M313 138H274M313 138L313 177M274 138H235M274 138L274 177M235 138H196M235 138L235 177M196 138H157M196 138L196 177M157 138H118M157 138L157 177M118 138L79 138M118 138V177M79 138H40M79 138V177M40 138H1M40 138V177M1 138V177M625 177H664M625 177H586M625 177V216M664 177V216M586 177L547 177M586 177V216M547 177H508M547 177V216M508 177H469M508 177V216M469 177H430M469 177V216M430 177H391M430 177V216M391 177H352M391 177V216M352 177L313 177M352 177V216M313 177H274M313 177V216M274 177H235M274 177V216M235 177H196M235 177V216M196 177H157M196 177V216M157 177H118M157 177V216M118 177L79 177M118 177V216M79 177H40M79 177V216M40 177H1M40 177V216M1 177V216M625 216H664M625 216H586M625 216V255M664 216V255M586 216L547 216M586 216V255M547 216H508M547 216V255M508 216H469M508 216V255M469 216H430M469 216V255M430 216H391M430 216V255M391 216H352M391 216V255M352 216L313 216M352 216V255M313 216H274M313 216V255M274 216H235M274 216V255M235 216H196M235 216V255M196 216H157M196 216V255M157 216H118M157 216V255M118 216L79 216M118 216V255M79 216H40M79 216V255M40 216H1M40 216V255M1 216V255M625 255H664M625 255H586M625 255V294M664 255V294H625M586 255L547 255M586 255V294M547 255H508M547 255V294M508 255H469M508 255V294M469 255H430M469 255V294M430 255H391M430 255V294M391 255H352M391 255V294M352 255L313 255M352 255V294M313 255H274M313 255V294M274 255H235M274 255V294M235 255H196M235 255V294M196 255H157M196 255V294M157 255H118M157 255V294M118 255L79 255M118 255V294M79 255H40M79 255V294M40 255H1M40 255V294M1 255V294H40M625 294H586M586 294L547 294M547 294H508M508 294H469M469 294H430M430 294H391M391 294H352M352 294L313 294M313 294H274M274 294H235M235 294H196M196 294H157M157 294H118M118 294L79 294M79 294H40"
-              stroke="url(#paint2_radial)"
-              strokeOpacity="0.08"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear"
-                x1="449.5"
-                y1="58.5"
-                x2="449.5"
-                y2="98.5"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#242739" stopOpacity="0" />
-                <stop offset="1" stopColor="#242739" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear"
-                x1="527.5"
-                y1="137.5"
-                x2="527.5"
-                y2="177.5"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#242739" stopOpacity="0" />
-                <stop offset="1" stopColor="#242739" />
-              </linearGradient>
-              <radialGradient
-                id="paint2_radial"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(332.5 72.5) rotate(90) scale(221 332)"
-              >
-                <stop stopColor="#242739" />
-                <stop offset="1" stopColor="#FFF242" stopOpacity="0.45098" />
-              </radialGradient>
-            </defs>
-          </svg>
+        {/* Flexential Logo - Full height on desktop, hidden on mobile */}
+        <div className="absolute right-0 top-0 bottom-0 w-auto hidden lg:flex items-center justify-end pr-8">
+          <img
+            src="flexential-logo.png"
+            alt="Flexential"
+            className="h-full max-h-[280px] w-auto object-contain object-right"
+          />
+        </div>
+
+        {/* Flexential Logo - Smaller on tablet */}
+        <div className="absolute right-4 top-1/2 -translate-y-1/2 w-32 md:w-40 hidden md:block lg:hidden">
+          <img
+            src="flexential-logo.png"
+            alt="Flexential"
+            className="w-full h-auto object-contain opacity-70"
+          />
         </div>
       </div>
     </div>
